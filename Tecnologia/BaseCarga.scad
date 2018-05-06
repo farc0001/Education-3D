@@ -1,0 +1,33 @@
+//Soporte Teléfono
+// L para la carga
+difference(){
+    union(){
+        cube([70,45,40]);
+        translate([0,0,30])
+            cube([70,15,16]);
+        translate([0,38,0])
+            cube([70,7,80]);
+        translate([-30,0,0])
+            cube([35,45,9]);
+    }
+    union(){
+        translate([-31,-1,-1]){
+            translate([0,0,0])
+                cube([5,11,6]);
+            translate([0,36,0])
+                cube([5,11,6]);
+            translate([0,16,0])
+                cube([5,15,6]);
+            translate([4.5,0,0])
+                cube([6.5,60,6]);
+        }
+        translate([5,4,-1])
+            cube([60,36,35]);
+        translate([27.5,10,-1])
+            cube([15,10,44]);
+        translate([28,30,-1])
+            cube([4,16,6]);
+        translate([38,30,-1])
+            cube([4,16,6]);
+    }
+}

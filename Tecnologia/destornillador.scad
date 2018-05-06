@@ -1,0 +1,20 @@
+// Destornillador para fregadero
+rotate([0,90,0]){
+    translate([-9,0,0]){
+        difference(){
+            difference(){
+                cylinder(h=100,r=9,$fn=6);
+                translate([0,0,15])
+                    cylinder(h=120,r=7,$fn=6);
+            }
+            {
+                rotate([90,0,90])
+                    translate([0,10,-10])
+                        cylinder(h=20,r=3,$fn=20);
+                rotate([90,0,0])
+                    translate([0,10,-10])
+                        cylinder(h=20,r=3,$fn=20);
+            }
+        }
+    }
+}
